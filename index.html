@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/structure.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/global.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/task2.css" media="all" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100" />
 
   </head>
@@ -64,13 +65,37 @@
 
       <div id="utility">
         <div id="top-content">
+          <ul id="tabs">
+            <li class="tablinks active" onclick="changeTab(event, 'top-read')">Top Read</li>
+            <li class="tablinks" onclick="changeTab(event, 'top-video')">Top Video</li>
+          </ul>
+          <div id="top-read" class="tabcontent">
+            <a class="top-content-item" href="#">
+              <img src="image/video/beverly-joubert.jpg" alt="" />
+              <p>Beverly + Dereck Joubert: Life lessons from big cats</p>
+            </a>
+            <a class="top-content-item" href="#">
+              <img src="image/video/naomi-klein.jpg" alt="" />
+              <p>Naomi Klein: Addicted to risk</p>
+            </a>
+            <a class="top-content-item" href="#">
+              <img src="image/video/elizabeth-lesser.jpg" alt="" />
+              <p>Elizabeth Lesser: Take ‘the Other’ to lunch</p>
+            </a>
+            <a class="top-content-item" href="#">
+              <img src="image/video/arianna-huffington.jpg" alt="" />
+              <p>Arianna Huffington: How to succeed? Get more sleep</p>
+            </a>
+            <a class="top-content-item" href="#">
+              <img src="image/video/charity-tillemann.jpg" alt="" />
+              <p>Charity Tillemann: Singing after a lung transplant</p>
+            </a>
+          </div>
+          <div id="top-video" class="tabcontent">
 
-          <!-- Task 2 - Build and style the Top Content widget -->
-          <img src="image/top-content/placeholder.jpg" alt="Top Content Placeholder" />
-
+          </div>
         </div>
       </div>
-
     </div>
 
     <div id="footer">
@@ -78,6 +103,20 @@
         <li>Copyright &copy; 2014 Pulse Magazine Ltd.</li>
       </ul>
     </div>
-
+    <script>
+        function changeTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
   </body>
 </html>
