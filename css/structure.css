@@ -1,0 +1,59 @@
+/******************************************/
+/* CSS powered by clock - www.clock.co.uk */
+/******************************************/
+
+/**
+ * Structural Styles
+ */
+
+#wrapper {
+	position: relative;
+	margin: 0px auto 0px auto;
+	padding: 0px 20px 0px 20px;
+	text-align: left;
+	width: 870px;
+}
+
+/* Main Site Header */
+
+#main-header {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+/* Navigation */
+
+#navigation {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 25px 0px;
+	padding: 21px 0px 21px 0px;
+}
+
+/* Main Content */
+
+#main-content {
+	float: left;
+	width: 65%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 20px 0px;
+}
+
+/* Utility */
+
+#utility {
+	float: right;
+	width: 35%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 100%;
+	padding: 30px 0px 30px 0px;
+}
